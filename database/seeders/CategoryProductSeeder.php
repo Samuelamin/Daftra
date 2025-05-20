@@ -27,7 +27,7 @@ class CategoryProductSeeder extends Seeder
                     'category_id' => $category->id,
                     'name'        => $faker->words(3, true),
                     'description' => $faker->paragraph,
-                    'image'       => $faker->imageUrl(640, 480, 'technics'),
+                    'image'       => 'https://api.arabgiftcard.com/upload/Cats/4ac0445c-91b8-4038-ab57-b4795acf4fe5.webp',
                     'stock'       => $faker->numberBetween(1, 100),
                     'price'       => $faker->randomFloat(2, 5, 200),
                     'created_at'  => now(),
