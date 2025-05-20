@@ -90,10 +90,10 @@ export default function OrderDetailsPage() {
                   <TableCell>{d.product?.name || d.product_id}</TableCell>
                   <TableCell align="right">{d.quantity || d.count}</TableCell>
                   <TableCell align="right">
-                    ${((d.price || d.unit_price) ?? 0).toFixed(2)}
+                    ${((d.product.price || d.product.price) ?? 0).toFixed(2)}
                   </TableCell>
                   <TableCell align="right">
-                    ${(((d.price || d.unit_price) ?? 0) * (d.quantity || d.count)).toFixed(2)}
+                    ${(((d.product.price || d.product.price) ?? 0) * (d.quantity || d.count)).toFixed(2)}
                   </TableCell>
                 </TableRow>
               ))}

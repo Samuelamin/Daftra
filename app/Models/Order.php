@@ -7,7 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 class Order extends Model
 {
     protected $guarded = ['id'];
+    protected $casts = [
+        'total' => 'float',
 
+    ];
     function orderDetails() {
         return $this->hasMany(OrderDetails::class)->with('product');
     }
