@@ -97,10 +97,6 @@ GET /api/user-orders/{id}
 |    |—— factories
 |        |—— UserFactory.php
 |    |—— migrations
-|        |—— 0001_01_01_000000_create_users_table.php
-|        |—— 0001_01_01_000001_create_cache_table.php
-|        |—— 0001_01_01_000002_create_jobs_table.php
-|        |—— 2025_05_20_124348_create_personal_access_tokens_table.php
 |        |—— 2025_05_20_133520_create_categories_table.php
 |        |—— 2025_05_20_133525_create_products_table.php
 |        |—— 2025_05_20_333556_create_orders_table.php
@@ -108,8 +104,6 @@ GET /api/user-orders/{id}
 |    |—— seeders
 |        |—— CategoryProductSeeder.php
 |—— resources
-|    |—— css
-|        |—— app.css
 |    |—— js
 |        |—— Context
 |            |—— AuthContext.jsx
@@ -141,8 +135,7 @@ GET /api/user-orders/{id}
 |            |—— middlewares
 |                |—— AuthLayout.jsx
 |                |—— GuestLayout.jsx
-|            |—— welcome.tsx
-|        |—— ssr.tsx
+|        |—— app.tsx
 |    |—— views
 |        |—— app.blade.php
 |—— routes
