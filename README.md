@@ -6,22 +6,22 @@ Backend is built with Laravel (Sanctum for API auth) and exposes a RESTful API; 
 
 #### Sign up
 ```http
-  POST /api/sign-up
+POST /api/sign-up
 ```
 
 #### Sign in
 ```http
-  POST /api/sign-up
+POST /api/sign-up
 ```
 
 #### Filter Products
 ```http
-  POST /api/products/
+POST /api/products/
 ```
  
 #### Get Authenticated User
 ```http
-  GET /api/user
+GET /api/user
 ```
  
 #### Sign Out
@@ -31,17 +31,17 @@ GET /api/sign-out
  
 ### List My Orders
 ```http
-  GET /api/user-orders
+GET /api/user-orders
 ```
  
 ### Place a New Order
 ```http
-  POST /api/user-orders
+POST /api/user-orders
 ```
  
 ### Get a Single Order
 ```http
-  GET /api/user-orders/{id}
+GET /api/user-orders/{id}
 ```
  
 
