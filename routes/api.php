@@ -11,8 +11,6 @@ Route::controller(ApiAuthenticationController::class)->group(function () {
 });
 
 Route::post('/products', [ApiDataController::class, 'products']);
-Route::get('/get_value', [ApiDataController::class, 'get_value']);
-Route::get('/set_value', [ApiDataController::class, 'set_value']);
 Route::middleware('auth:sanctum', 'verified')->group(function () {
 
     Route::controller(ApiAuthenticationController::class)->group(function () {
